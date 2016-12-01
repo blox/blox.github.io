@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>realeases-and-roadmap</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="36" height="36" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="36" height="36" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main---v2" transform="translate(-156.000000, -2257.000000)">
+            <g id="realeases-and-roadmap" transform="translate(156.000000, 2257.000000)">
+                <g id="Group-4-Copy" transform="translate(18.000000, 18.000000) scale(-1, 1) translate(-18.000000, -18.000000) ">
+                    <use id="Rectangle-4-Copy-3" stroke="#0097FE" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    <path d="M2.3,11 L9.8,11" id="Line-Copy-13" stroke="#0097FE" stroke-width="2" stroke-linecap="square"></path>
+                    <path d="M16,11 L35,11" id="Line-Copy-14" stroke="#0097FE" stroke-width="2" stroke-linecap="square"></path>
+                    <path d="M20,16 C20,16 21,19 24,19 C27,19 35,19 35,19" id="Line-Copy-16" stroke="#0097FE" stroke-width="2" stroke-linecap="square"></path>
+                    <path d="M12,10.0330579 C12,10.0330579 19,9.03305785 19,18.0330579 C19,27.0330579 27,26.0330579 27,26.0330579 L33,26.0330579" id="Path-2-Copy-3" stroke="#FFFFFF" stroke-width="2"></path>
+                    <path d="M15,11 C19,11 18.5652174,12.0661157 20.7826087,19.0330579 C23,26 23,27.0330579 27,27.0330579 C31,27.0330579 34,27.0330579 34,27.0330579" id="Path-2-Copy-4" stroke="#0097FE" stroke-width="2"></path>
+                    <circle id="Oval-Copy" stroke="#FFFFFF" stroke-width="2" fill="#0097FE" cx="10" cy="11" r="4"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
