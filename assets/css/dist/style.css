@@ -224,6 +224,11 @@ body {
     padding-right: 8px;
     height: 30px;
     margin-top: -3px; }
+  .footer .copyright {
+      text-align: right;
+      padding-top: 20px;
+      font-size: 12px;
+  }
   @media (max-width: 600px) {
     .footer .container-flex {
       display: block; }
