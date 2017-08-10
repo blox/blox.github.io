@@ -20,8 +20,8 @@
 
 			<div class="row">
 				<div class="col-sm-10">
-					<p class="block-description sublead">Blox is a set of schedulers for developers using Amazon EC2 Container Service (Amazon ECS).
-					As an open-source project, Blox gives you complete control how your containers are deployed and maintained, while leveraging Amazon ECS to fully manage and scale the compute clusters that power them.</p>
+					<p class="block-description sublead">Blox allows you to customize how your containers are deployed and maintained, while leveraging Amazon ECS to fully manage and scale the compute clusters that power them.
+					 The daemon-scheduler is available today for use, customization, and contribution. We are working on several other schedulers and welcome your input to <a href="#releases-and-roadmap">our roadmap</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 
 			<div class="row">
 				<div class="col-sm-12">
-					<p class="block-description">These scheduling frameworks give you several options for deploying and maintianing tasks. You can use them in conjuction with the <a href="#supporting-tools">cluster-state-service</a> to customize the scheduling logic.</p>
+					<p class="block-description">Blox scheduling frameworks allow you to customize how tasks are deployed onto your Amazon ECS cluster.</p>
 				</div>
 			</div>
 
@@ -76,33 +76,6 @@
 						<p>The <a href="https://github.com/blox/blox/tree/master/daemon-scheduler">daemon-scheduler</a> allows you to run exactly one task per host across all nodes in
 						a cluster. The scheduler monitors the cluster state and launches tasks as new nodes join the cluster, making
 						it ideal for running monitoring agents, log collectors, etc.</p>
-					</div>
-				</div>
-				<div class="spacer-40"></div>
-				<div class="row">
-					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;service-scheduler</h3>
-					</div>
-					<div class="col-sm-9">
-						<p>The service-scheduler allows you to run a specified number of tasks per host. <font color="#1dacfb"><i>coming soon</i></font></p>
-					</div>
-				</div>
-				<div class="spacer-40"></div>
-				<div class="row">
-					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;cron-scheduler</h3>
-					</div>
-					<div class="col-sm-9">
-						<p>The cron-scheduler allows you to run tasks on a specific time interval. <font color="#1dacfb"><i>coming soon</i></font> </p>
-					</div>
-				</div>
-				<div class="spacer-40"></div>
-				<div class="row">
-					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;stateful-scheduler</h3>
-					</div>
-					<div class="col-sm-9">
-						<p>The stateful-scheduler allows you to run tasks based on identity properties. <font color="#1dacfb"><i>coming soon</i></font> </p>
 					</div>
 				</div>
 			</div>
@@ -124,18 +97,6 @@
 			<div class="custom-panel">
 				<div class="row">
 					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;<a href="https://github.com/blox/blox/tree/master/cluster-state-service">cluster-state-service</a></h3>
-					</div>
-					<div class="col-sm-9">
-						<p>The <a href="https://github.com/blox/blox/tree/master/cluster-state-service">cluster-state-service</a> consumes events from a stream of all changes to containers and instances across your Amazon ECS clusters,
-							persists the events in a local data store, and provides APIs (e.g., search, filter, list, etc.) that enable you to query the state of your cluster
-							so you can respond to changes in real-time. The cluster-state-service tracks your Amazon ECS cluster state locally,
-							and manages any drift in state by periodically reconciling state with Amazon ECS. </p>
-					</div>
-				</div>
-				<div class="spacer-40"></div>
-				<div class="row">
-					<div class="col-sm-3">
 						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;<a href="https://github.com/aws/amazon-ecs-cli">ecs-cli</a></h3>
 					</div>
 					<div class="col-sm-9">
@@ -143,6 +104,18 @@
 						high-level commands to simplify creating, updating, and monitoring clusters and tasks from a local
 						development environment and deploying tasks to production on Amazon ECS. You can use the CLI, as an
 						alternative to the AWS Management Console, for everyday development and testing.</p>
+					</div>
+				</div>
+				<div class="spacer-40"></div>
+				<div class="row">
+					<div class="col-sm-3">
+						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;<a href="https://github.com/aws/amazon-ecs-agent">ecs-agent</a></h3>
+					</div>
+					<div class="col-sm-9">
+						<p>The <a href="https://github.com/aws/amazon-ecs-agent">Amazon ECS Agent</a> is software that runs on container instances and enables communciation with the
+							local Docker daemon on behalf of Amazon ECS. The Amazon ECS Agent is included in the <a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html">
+							ECS-optimized Amazon Linux AMI</a>. Learn more about the agent at its <a href="https://github.com/aws/amazon-ecs-agent">GitHub repo</a> or in the
+							<a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_agent.html">Amazon ECS documentation</a>.</p>
 					</div>
 				</div>
 			</div>
