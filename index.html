@@ -12,16 +12,15 @@
 	<div id="top" class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9">
-					<p class="lead"><img style="height: 40px" src="assets/img/blox-logo.svg" class="blox" alt="Blox" /> is an open source scheduling engine for Docker containers that powers <a href="https://aws.amazon.com/ecs">Amazon EC2 Container Service</a>
+				<div class="col-md-7">
+					<p class="lead"><img style="height: 40px" src="assets/img/blox-logo.svg" class="blox" alt="Blox" />&nbsp;&nbsp;is an open source scheduler built for <a href="https://aws.amazon.com/ecs">Amazon EC2 Container Service</a>
 					</p>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-sm-9">
-					<p class="block-description sublead">Blox allows you to customize how your containers are deployed and maintained, while leveraging Amazon ECS to fully manage and scale the compute clusters that power them.
-					 The daemon-scheduler is available today for use, customization, and contribution. We are working on several other schedulers and welcome your input to <a href="#releases-and-roadmap">our roadmap</a>.</p>
+				<div class="col-sm-9 tab">
+					<p class="block-description sublead">Blox provides scheduling capabilities that enable developers to have greater choice and flexibility over when to deploy, run, and scale tasks for containerized services.</p>
 				</div>
 			</div>
 		</div>
@@ -45,10 +44,8 @@
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a style="padding-left: 60px; font-weight: bolder" href="#scheduling-framework">Scheduling Frameworks</a></li>
-						<li><a style="padding-left: 60px; font-weight: bolder" href="#supporting-tools">Supporting Tools</a></li>
-						<li><a style="padding-left: 60px; font-weight: bolder" href="#releases-and-roadmap">Releases and Roadmap</a></li>
-						<li><a style="padding-left: 60px; font-weight: bolder" href="#about" class="text-light">About</a></li>
+						<li><a style="padding-left: 60px; font-weight: bolder" href="#current-development">Current Development</a></li>
+						<li><a style="padding-left: 60px; font-weight: bolder" href="#about">About</a></li>
 					</ul>
 				</div>
 
@@ -56,108 +53,36 @@
 		</div>
 	</div>
 
-	<div id="scheduling-framework" class="block scheduling">
+	<div id="current-development" class="block scheduling">
 		<div style="background-image: none" class="container">
 
-			<h2><img src="assets/img/scheduling-framework.svg"/> Scheduling Frameworks</h2>
+			<h2><img src="assets/img/releases-and-roadmap.svg"/> Current Development</h2>
 
 			<div class="row">
-				<div class="col-sm-12">
-					<p class="block-description">Blox scheduling frameworks allow you to customize how tasks are deployed onto your Amazon ECS cluster.</p>
+				<div class="col-md-10">
+					<p class="block-description">Blox v1.0 is under active development.
 				</div>
 			</div>
-
 			<div class="custom-panel">
 				<div class="row">
 					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg"/>&nbsp;&nbsp;<a href="https://github.com/blox/blox/tree/master/daemon-scheduler">daemon-scheduler</a></h3>
+						<h3><a href="https://github.com/blox/blox/blob/dev/README.md" target="_blank">Current Development</a></h3>
 					</div>
 					<div class="col-sm-9">
-						<p>The <a href="https://github.com/blox/blox/tree/master/daemon-scheduler">daemon-scheduler</a> allows you to run exactly one task per host across all nodes in
-						a cluster. The scheduler monitors the cluster state and launches tasks as new nodes join the cluster, making
-						it ideal for running monitoring agents, log collectors, etc.</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div id="supporting-tools" class="block cli">
-		<div class="container">
-
-			<h2><img src="assets/img/command-line-tools.svg" /> Supporting Tools</h2>
-
-			<div class="row">
-				<div class="col-md-7">
-					<p class="block-description">The following projects provide supporting development tools for Amazon ECS.</p>
-				</div>
-			</div>
-
-			<div class="custom-panel">
-				<div class="row">
-					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;<a href="https://github.com/aws/amazon-ecs-cli">ecs-cli</a></h3>
-					</div>
-					<div class="col-sm-9">
-						<p>The <a href="https://github.com/aws/amazon-ecs-cli">Amazon ECS Command Line Interface (CLI)</a> is a command line interface for Amazon ECS that provides
-						high-level commands to simplify creating, updating, and monitoring clusters and tasks from a local
-						development environment and deploying tasks to production on Amazon ECS. You can use the CLI, as an
-						alternative to the AWS Management Console, for everyday development and testing.</p>
+					<p>The Blox team is currently working on a release of the Blox daemon-scheduler v1.0.<br/>
+					Please read the <a href="https://github.com/blox/blox/blob/dev/docs/daemon_design.md" target="_blank">deamon-scheduler design doc</a> or <a href="https://github.com/blox/blox/blob/dev/FAQ.md" target="_blank">Blox FAQ</a> for more information.</p>
 					</div>
 				</div>
 				<div class="spacer-40"></div>
 				<div class="row">
 					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;<a href="https://github.com/aws/amazon-ecs-agent">ecs-agent</a></h3>
+						<h3> <a href="https://github.com/blox/blox/milestones" target="_blank">Roadmap</a></h3>
 					</div>
 					<div class="col-sm-9">
-						<p>The <a href="https://github.com/aws/amazon-ecs-agent">Amazon ECS Agent</a> is software that runs on container instances and enables communciation with the
-							local Docker daemon on behalf of Amazon ECS. The Amazon ECS Agent is included in the <a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html">
-							ECS-optimized Amazon Linux AMI</a>. Learn more about the agent at its <a href="https://github.com/aws/amazon-ecs-agent">GitHub repo</a> or in the
-							<a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_agent.html">Amazon ECS documentation</a>.</p>
+					<p>The <a href="https://github.com/blox/blox/milestones" target="_blank">Blox roadmap</a> organizes and tracks the state of our development. Visit to see where we're going and give us input on what to build next.</p>
 					</div>
 				</div>
 			</div>
-
-		</div>
-	</div>
-
-	<div id="releases-and-roadmap" class="block releases">
-		<div class="container">
-
-			<h2><img src="assets/img/releases-and-roadmap.svg" /> Releases and Roadmap</h2>
-
-			<div class="row">
-				<div class="col-md-12">
-					<p class="block-description">The following pages provide deployment packages for the latest
-					releases and the roadmap for the Blox projects.</p>
-				</div>
-			</div>
-
-			<div class="custom-panel">
-				<div class="row">
-					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;<a href="https://github.com/blox/blox/releases">release</a></h3>
-					</div>
-					<div class="col-sm-9">
-						<p>The <a href="https://github.com/blox/blox/releases">release</a> page tracks various release and deployment packages for Blox.
-							The scheduling framework can be deployed on AWS using AWS CloudFormation templates or locally using the provided Docker compose file.
-							This folder contains both deployment automation methods. As more projects are added, this folder will act as the central location for downloading Blox release packages.</p>
-					</div>
-				</div>
-				<div class="spacer-40"></div>
-				<div class="row">
-					<div class="col-sm-3">
-						<h3><img src="assets/img/repo.svg" />&nbsp;&nbsp;<a href="https://github.com/blox/blox/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22roadmap%22">roadmap</a></h3>
-					</div>
-					<div class="col-sm-9">
-						<p>The <a href="https://github.com/blox/blox/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22roadmap%22">roadmap</a>
-							page organizes and tracks issues across the Blox projects. The Blox team will share and collaborate on the project roadmap here. </p>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
 
@@ -180,7 +105,7 @@
 
 					<p>The scheduling frameworks that make up Blox are also available to Amazon ECS users without
 					having to build, deploy and manage any custom scheduling logic.&nbsp;&nbsp;
-					<a href="https://aws.amazon.com/ecs" target="_blank">Learn more »</a></p>
+					<a href="https://aws.amazon.com/ecs" target="_blank">Learn more ></a></p>
 
 				</div></div>
 				<div class="row">
